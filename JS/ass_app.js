@@ -26,6 +26,7 @@
                 $scope.message = "Please Enter Data First!";
                 $scope.borderdata += "Crimson";
                 $scope.color = "Crimson";
+                $scope.data_items = "";
             }
             else if(ctr>0 && ctr<3){
                 $scope.message = "Enjoy!";
