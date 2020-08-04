@@ -6,13 +6,14 @@
     <title>Assignment 1</title>
     <script src="JS/angular.min.js"></script>
     <script src="JS/ass_app.js"></script>
+    <link href="css/style.css" rel="stylesheet"></style>
 </head>
 <body>
     <div ng-controller="DataController">
         <h2>Enter what you would like to eat.</h2>
-        <input type="text" ng-model="data_items">
+        <input type="text" ng-model="data_items" placeholder="Enter Food Items">
         <input type="submit" ng-click="checkInput()" value="Check if Too Much">
-    <p style='border: {{borderdata}};color:{{color}}'>{{message}}</p>
+        <p style='border: {{borderdata}};color:{{color}}'>{{message}}</p>
     </div>
 </body>
 </html>

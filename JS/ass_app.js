@@ -30,13 +30,13 @@
             }
             else if(ctr>0 && ctr<3){
                 $scope.message = "Enjoy!";
-                $scope.borderdata += "LimeGreen";
-                $scope.color = "limegreen";
+                $scope.borderdata += "Green";
+                $scope.color = "green";
             }
             else{
                 $scope.message = "Too Much!";
                 $scope.borderdata += "Limegreen";
-                $scope.color = "limegreen";
+                $scope.color = "green";
             }
         };
     }
