@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myFirstPage">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angular JS</title>
+    <script src="JS/angular.min.js"></script>
+    <script src="JS/app.js"></script>
 </head>
 <body>
-    <h1>Hello World!!!</h1>
+    <h1>Calculate</h1>
+    <div ng-controller="MyFirstController">
+        <input type="text" ng-model="name"
+        ng-keyup="calculateSize();">
+        <p>Total : {{total}}</p>
+    </div>
+    <h1>UpperCase</h1>
+    <div ng-controller="ToUpperController">
+        <input type="text" ng-model = "upperData"
+        ng-blur='upper();'>
+    </div>
 </body>
 </html>
