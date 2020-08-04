@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Assignment">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <script src="JS/angular.min.js"></script>
+    <script src="JS/ass_app.js"></script>
+</head>
+<body>
+    <div ng-controller="DataController">
+        <h2>Enter what you would like to eat.</h2>
+        <input type="text" ng-model="data_items">
+        <input type="submit" ng-click="checkInput()" value="Check if Too Much">
+    <p style='border: {{borderdata}};color:{{color}}'>{{message}}</p>
+    </div>
+</body>
+</html>
