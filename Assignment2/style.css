@@ -1,0 +1,15 @@
+body{
+    margin:0;
+}
+.div1,.div2{
+    margin:0 auto;
+    float: left;
+    text-align: center;
+    padding:20px;
+    width: 40%;
+    background-color: cadetblue;
+}
+.items{
+    padding:5px;
+    text-align: left;
+}

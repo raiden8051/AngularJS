@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="filterModule">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+    <script src="../JS/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div ng-controller="ModuleController">
+        <h2>Working of filter</h2>
+        {{msg}}<br>
+        {{"RAi" | change hg: "Raiden" : "Ra" | uppercase}}
+    </div>
+</body>
+</html>

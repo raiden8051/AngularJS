@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='AssignmentModule'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../JS/angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div ng-controller='ToBuyController as tbc' class='div1'>
+        <h2>To Buy</h1>
+        <div ng-repeat='item in tbc.list' class='items'>
+            Buy {{item.qty}} {{item.name}}
+            <button ng-click="tbc.addToCart($index)">Bought</button>
+        </div>
+        {{tbc.msg}}
+    </div>
+    <div ng-controller='BoughtController as bc' class='div2'>
+        <h2>Already Bought</h1>
+        <div ng-repeat='item in bc.list' class='items'>
+            Bought {{item.qty}} {{item.name}}
+        </div>
+    </div>
+</body>
+</html>

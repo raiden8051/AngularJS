@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Service">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular JS</title>
+    <script src="../JS/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div ng-controller='AddingController as ac'>
+        <input type="text" ng-model='ac.name'>
+        <input type="text" ng-model='ac.quantity'>
+        <button ng-click='ac.add()'>Add</button>
+        <ul>
+            <li ng-repeat='item in ac.list'>
+                {{ac.name}}:{{sc.quantity}}
+                <button ng-click='ac.remove($index);'>Remove</button>
+            </li>
+            <div>{{ac.error}}</div>
+        </ul>
+
+    </div>
+</body>
+</html>

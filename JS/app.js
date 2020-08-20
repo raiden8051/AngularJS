@@ -18,6 +18,17 @@
     .controller('ToUpperController',makeUpper);
 
     function makeUpper($scope, $filter) {
+        
+        $scope.quantity = [
+            {
+                name:"Ram",
+                quantity: "10"
+            },
+            {
+                name:"Shyam",
+                quantity: "20"
+            }
+        ];
         $scope.upper = function(){
             var toupper = $filter('uppercase');
             $scope.upperData = toupper($scope.upperData);
