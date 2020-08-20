@@ -27,23 +27,23 @@
         var items=
         [
             {
-                name:"Flour",
+                name:"Cookies",
                 qty:10
             },
             {
-                name:"Cinnamonne",
+                name:"Oreo",
                 qty:15
             },
             {
-                name:"Clove",
+                name:"Lotte pie",
                 qty:5
             },
             {
-                name:"Ginger",
+                name:"Cadbury",
                 qty:1
             },
             {
-                name:"Corriender",
+                name:"Hersheys",
                 qty:12
             }
         ];

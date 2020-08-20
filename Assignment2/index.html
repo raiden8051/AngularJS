@@ -9,19 +9,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div ng-controller='ToBuyController as tbc' class='div1'>
-        <h2>To Buy</h1>
-        <div ng-repeat='item in tbc.list' class='items'>
-            Buy {{item.qty}} {{item.name}}
-            <button ng-click="tbc.addToCart($index)">Bought</button>
+    <div class='container'>
+        <div ng-controller='ToBuyController as tbc' class='div1'>
+            <h2>To Buy</h1>
+            <div ng-repeat='item in tbc.list' class='items'>
+                Buy {{item.qty}} {{item.name}}
+                <button ng-click="tbc.addToCart($index)">Bought</button>
+            </div>
+            {{tbc.msg}}
         </div>
-        {{tbc.msg}}
-    </div>
-    <div ng-controller='BoughtController as bc' class='div2'>
-        <h2>Already Bought</h1>
-        <div ng-repeat='item in bc.list' class='items'>
-            Bought {{item.qty}} {{item.name}}
+        <div ng-controller='BoughtController as bc' class='div2'>
+            <h2>Already Bought</h1>
+            <div ng-repeat='item in bc.list' class='items'>
+                Bought {{item.qty}} {{item.name}}
+            </div>
         </div>
-    </div>
+    </div>  
 </body>
 </html>
