@@ -20,6 +20,7 @@
     }
     BoughtController.$inject = ['MainService'];
     function BoughtController(MainService){
+        this.error="Nothin";
         this.list = MainService.fetch2();
     }
     function MainService(){
