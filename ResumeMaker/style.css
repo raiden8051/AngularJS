@@ -1,0 +1,32 @@
+body{
+    margin:0;
+    padding:0;
+}
+.top{
+    text-align: center;
+    height: 50vh;
+    border-top:10px solid rgb(209, 207, 207);
+    border-right:10px solid rgb(209, 207, 207);
+    border-left:10px solid rgb(209, 207, 207);
+
+}
+.bottom{
+    height: 50vh;
+    border-bottom:10px solid rgb(240, 211, 216);
+    border-right:10px solid rgb(240, 211, 216);
+    border-left:10px solid rgb(240, 211, 216);
+    width: 100%;
+}
+.top img{
+    margin-top:20px;
+    border-radius: 50%;
+    width: 128px;
+    height: 128px;
+}
+.top h6{
+    color:gray;
+}
+.top h3{
+    padding-left: 50px;
+    color:rgb(85, 83, 83);
+}

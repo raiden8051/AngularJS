@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='PromiseModule'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+    <script src="../JS/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div ng-controller='MainController as mc'>
+        <input type="text" ng-model='mc.itemName'>
+        <button ng-click='mc.addItem()'>Add</button>
+        <div ng-repeat='data in mc.list track by $index'>
+            {{data}}
+        </div>
+    </div>
+</body>
+</html>
