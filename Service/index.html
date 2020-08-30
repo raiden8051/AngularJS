@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angular JS</title>
+    <script src="../JS/jquery-3.5.1.js"></script>
     <script src="../JS/angular.min.js"></script>
     <script src="app.js"></script>
 </head>
@@ -13,13 +14,8 @@
         <input type="text" ng-model='ac.quantity'>
         <button ng-click='ac.add()'>Add</button>
         <ul>
-            <li ng-repeat='item in ac.list'>
-                {{ac.name}}:{{sc.quantity}}
-                <button ng-click='ac.remove($index);'>Remove</button>
-            </li>
-            <div>{{ac.error}}</div>
+            <list-item list='ac.list' title='{{ac.title}}' remove='ac.remove'></list-item>
         </ul>
-
     </div>
 </body>
 </html>

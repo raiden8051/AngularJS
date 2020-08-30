@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="main">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <style>
+        body{
+            display: grid;
+            justify-items: center;
+            align-items: center;
+        }
+        .list{
+            padding: 10px 10px 10px 40px;
+            border:1px solid #4b4949;
+            grid-template-columns: 50%;
+        }
+        .list button{
+            width: auto;
+        }
+        .list li{
+            display: grid;
+            
+        }
+    </style>
+    <!-- <script src="../JS/jquery-3.5.1.js"></script> -->
+    <script src="../JS/angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Assignment 3</title>
+</head>
+<body>
+    <div ng-controller="Ctrl as ctrl">
+        <input ng-model='ctrl.serachValue' placeholder="Enter Food name" class='form-control'>
+        <button ng-click='ctrl.getData()' class='form-control btn-success'>Narrow it down for me!!</button><br/>
+        <found-items ctrl="ctrl" remove='ctrl.remove'></found-items>
+        <h3 ng-if='ctrl.list.length===0'>Nothing Found!</h3>
+    </div>
+</body>
+</html>

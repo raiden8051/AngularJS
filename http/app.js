@@ -8,7 +8,7 @@
     function httpCtrl(Service) {
         
         var promise = Service.getData();
-        promise.then((response)=> {
+        promise.then((response) => {
                 this.list = response.data;
             })
             .catch((error) => {

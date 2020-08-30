@@ -1,0 +1,6 @@
+<h3>{{nctrl.title}}</h3>
+<li ng-repeat='item in nctrl.list'>
+    {{item.name}}:{{item.quantity}}
+    <button ng-click='nctrl.remove($index);'>Remove</button>
+</li>
+<h4>Hello</h3>
